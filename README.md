@@ -56,6 +56,9 @@ There is no installation required for this project.
 
 To use this project, update the HTML and CSS files with your own content and styling.
 
+## Deployment
+https://fmalgarini.github.io/Portfolio.github.io/
+
 ### Run tests
 
 To run tests, run the following command:
