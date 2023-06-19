@@ -71,6 +71,7 @@ A customizable linting tool that helps you improve your site's accessibility, sp
 
 ## 👥 Authors <a name="authors"></a>
     👤 Facundo Malgarini
+
 - GitHub: [@githubhandle](https://github.com/fmalgarini)
 - Twitter: [@twitterhandle](https://twitter.com/malga10)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/facundo-malgarini-192010208/)
