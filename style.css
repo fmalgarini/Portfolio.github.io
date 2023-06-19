@@ -1,0 +1,891 @@
+/* Fonts imports */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&family=Open+Sans:ital,wght@0,400;1,300&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@700&display=swap');
+
+/* Global configuration */
+* {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+/* Body background color */
+
+body {
+  background: #e5e5e5;
+}
+
+/* --------------------------NAV-------------------------------- */
+
+/* Styiling Header and nav using FLEX/ Logo font and color figures */
+
+.nav-container {
+  list-style: none;
+  display: flex;
+  height: 15vh;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+}
+
+.nav-links {
+  display: none;
+}
+
+/* General flex items settings in nav */
+.nav-items {
+  color: #6070ff;
+  font-weight: 700;
+  font-size: 18px;
+  margin-left: 8vw;
+}
+
+/* Adding the hamburger menu and modifying it */
+.assetNav {
+  background-image: url(assets/Union.svg);
+  background-repeat: no-repeat;
+  width: 10%;
+  height: 25%;
+}
+
+/* ------------------------PRESENTATION--------------------------------- */
+
+/* Styiling Section and divs using FLEX/ BackgroundImage,h1 title, and software developer presentation figures */
+
+.presentation-container {
+  background-image: url(assets/header-shapes.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  padding: 25vh 5vw;
+  gap: 12px;
+  border-bottom-left-radius: 5em;
+  background-color: white;
+}
+
+.presentation-container h1 {
+  background: none;
+  color: rgba(23, 43, 77, 1);
+  font-weight: 700;
+  line-height: 52px;
+  font-size: 2.4em;
+}
+
+div > p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: rgba(52, 69, 99, 1);
+}
+
+.presentation-container p {
+  color: #344563;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.presentation-container span {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #6070ff;
+}
+
+.item4 {
+  background-image: url(assets/social\ media\ icons.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 170.17px;
+  height: 20px;
+}
+
+/* ------------------------------CARDS---------------------------------- */
+
+/* Card-container general settings */
+
+/* note: I've placed the images in the html */
+
+.card1 {
+  display: grid;
+  background-color: white;
+  border: 2px solid #dfe1e6;
+  grid-template-columns: auto;
+  margin: 5%;
+  padding: 5%;
+  border-radius: 1em;
+}
+
+/* general settings for every Cards */
+
+.cardWorks p {
+  padding-top: 10px;
+  color: rgba(52, 69, 99, 1);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+/* Editing the TONIC word inside the card */
+div > h4 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: rgba(23, 43, 77, 1);
+}
+
+/* editing "Back End Dev", "2015" and dots in the card */
+.dot {
+  height: 8px;
+  width: 8px;
+  background-color: rgba(193, 199, 208, 1);
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 8px;
+}
+
+/* Editing the word: "CANOPY" */
+div .word1 {
+  color: rgba(52, 69, 99, 1);
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 19px;
+}
+
+/* Editing the word: "Back End Dev" */
+div .word2 {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #7a869a;
+  margin-left: 8px;
+}
+
+/* Editing the word: "2015" */
+div .word3 {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #7a869a;
+  margin-left: 8px;
+}
+
+/* Editing the paragraph inside de card */
+
+/* Editing the skills part insidte the card */
+
+.workContainer {
+  margin-top: 10px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.workContainer li {
+  background: #ebebff;
+  border-radius: 8px;
+  width: auto;
+  height: 20px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  color: rgba(96, 112, 255, 1);
+  padding: 1px 14px 1px 10px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.workContainer #workContainercss {
+  margin-left: 10px;
+}
+
+.workContainer #workContainerjs {
+  margin-left: 10px;
+}
+
+#workContainerRubyOnRails {
+  display: none;
+}
+
+.workContainer #workContainerRubyOnRails {
+  margin-left: 10px;
+}
+
+/* Editing the button inside the card */
+
+.cardButton {
+  border: 1px solid rgba(96, 112, 255, 1);
+  background-color: rgba(255, 255, 255, 1);
+  width: 126px;
+  height: 48px;
+  padding: 12px;
+  margin-top: 15px;
+  border-radius: 8px;
+  color: #396df2;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.cardButton:hover {
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: #6070ff;
+  color: white;
+}
+
+.cardButton:active {
+  background-color: #2230d2;
+  color: white;
+  border-color: #2230d2;
+}
+
+/* Editing AboutMySelf Section */
+
+/* ________________________________________________________About My self__________________________________________________ */
+
+.aboutMyself {
+  padding: 114px 24px;
+  background-color: white;
+  border-top-right-radius: 6rem;
+}
+
+.aboutMyself-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.aboutMyself-container h3 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: rgba(23, 43, 77, 1);
+}
+
+.aboutMyself-container p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(52, 69, 99, 1);
+}
+
+.aboutMyself-container h5 {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 40px;
+  color: rgba(127, 140, 255, 1);
+}
+
+/* frame icons editing */
+
+.frame {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 200px;
+  height: 40px;
+  justify-content: space-evenly;
+}
+
+#frame1 {
+  background-image: url(assets/GitHub.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 18px;
+  height: 20px;
+}
+
+#frame2 {
+  background-image: url(assets/linkedin.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+}
+
+#frame3 {
+  background-image: url(assets/victoryHand.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 20px;
+  height: 25px;
+}
+
+#frame4 {
+  background-image: url(assets/Twitter.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+}
+
+#frame5 {
+  background-image: url(assets/MVECTOR.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 21px;
+  height: 16px;
+}
+
+#aboutMyselfBotton {
+  border: 1px solid rgba(57, 109, 242, 1);
+  background-color: rgba(255, 255, 255, 1);
+  width: 164px;
+  height: 48px;
+  border-radius: 8px;
+  padding: 12px;
+  color: #396df2;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+#aboutMyselfBotton:hover {
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: #6070ff;
+  color: white;
+}
+
+#aboutMyselfBotton:active {
+  background-color: #2230d2;
+  color: white;
+  border-color: #2230d2;
+}
+
+/* Languages container */
+
+.languageAndArrowContainer {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 1);
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.languagesContainer {
+  display: flex;
+  flex-direction: row;
+  margin-top: 15px;
+}
+
+.languages {
+  background-color: #f7f7f9;
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  padding: 9px 12px 10px 10px;
+  border-radius: 0.7em;
+  font-weight: 500;
+  font-size: 1em;
+  line-height: 20px;
+  color: #253858;
+}
+
+#js {
+  color: rgba(37, 56, 88, 1);
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  height: 24px;
+  padding: 12px;
+  width: 215px;
+}
+
+#html {
+  color: rgba(37, 56, 88, 1);
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  height: 24px;
+  padding: 12px;
+  width: 215px;
+}
+
+#css {
+  color: rgba(37, 56, 88, 1);
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  height: 24px;
+  padding: 12px;
+  width: 215px;
+}
+
+/* Footer background img and general settings */
+.footer-mobile {
+  background-image: url(assets/ContactMeBackground.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: right;
+  padding: 15vh 8vw 5vh 8vw;
+  background-color: rgba(96, 112, 255, 1);
+  border-top-left-radius: 6.5rem;
+}
+
+/* footer form */
+
+.form-container {
+  padding-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Contact me form */
+.form-container h6 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #fff;
+}
+
+/* Contact me pharagraph */
+
+.form-container p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #ebebff;
+  padding-bottom: 1.5rem;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Form Contact Me */
+
+input {
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  padding: 1rem;
+  height: 8px;
+  width: 300px;
+  font-size: 500;
+}
+
+/* Place older edits for imputs */
+
+::placeholder {
+  color: rgba(23, 43, 77, 1);
+  font-weight: 500;
+  letter-spacing: 0;
+  font-size: 1em;
+  text-align: start;
+}
+
+/* placeholder edits for textarea */
+
+textarea {
+  padding: 5%;
+  border-radius: 8px;
+}
+
+textarea::placeholder {
+  color: rgba(179, 186, 197, 1);
+}
+
+/* form bootom */
+
+#formButton {
+  border: 1px solid rgba(57, 109, 242, 1);
+  background-color: rgba(255, 255, 255, 1);
+  width: 164px;
+  height: 48px;
+  border-radius: 8px;
+  color: #396df2;
+  font-weight: 500;
+  font-size: 17px;
+  align-self: self-start;
+}
+
+#formButton:hover {
+  background-color: #6070ff;
+  color: white;
+  border-color: white;
+}
+
+#formButton:active {
+  background-color: #2230d2;
+  color: white;
+  border-color: #2230d2;
+}
+
+.nav-desktop {
+  display: none;
+}
+
+/* Max media query */
+
+@media only screen and (min-width: 768px) {
+  .assetnav {
+    display: none;
+  }
+
+  .nav-container {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #workContainerRubyOnRails {
+    display: block;
+  }
+
+  /* Nav icons */
+  .nav-desktop {
+    display: flex;
+    font-size: 15px;
+    line-height: 20px;
+    list-style: none;
+    height: 11vh;
+    background-color: white;
+    position: fixed;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .logo-desktop {
+    color: #6070ff;
+    font-weight: 700;
+    font-size: 18px;
+    padding-left: 4rem;
+  }
+
+  .container-link {
+    display: flex;
+    justify-content: space-around;
+    width: 20%;
+    margin-right: 8rem;
+  }
+
+  .desktop-link {
+    color: rgba(52, 69, 99, 1);
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  /* Background logo */
+
+  .presentation-desktop {
+    background-image: url(assets/header-bg-desktop.svg);
+    background-size: contain;
+    background-position-x: right;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    padding: 32vh 5vw;
+    border-bottom-left-radius: 5em;
+    background-color: white;
+  }
+
+  /* Presentation */
+
+  .presentation-desktop h1 {
+    font-size: 48px;
+    line-height: 60px;
+    margin-left: 10rem;
+    margin-bottom: 1rem;
+  }
+
+  .presentation-desktop p {
+    width: 70%;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    margin-left: 10rem;
+    margin-bottom: 1rem;
+  }
+
+  .presentation-desktop span {
+    margin-left: 10rem;
+  }
+
+  .presentation-desktop .item4 {
+    margin-left: 10rem;
+    margin-top: 1rem;
+  }
+
+  .presentation-desktop-item {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInMoveUp 1.3s ease-out forwards;
+  }
+
+  @keyframes fadeInMoveUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* /* CARD1 GLOBAL SETTINGS */
+  .card1 {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-evenly;
+    align-content: center;
+    gap: 3%;
+    background-color: white;
+    border: 2px solid #dfe1e6;
+    border-radius: 1em;
+
+    /* border: 3px solid green; */
+    width: 70rem;
+    height: 25rem;
+  }
+
+  /* _______________CARD 1___________ */
+
+  /* CARD1 ALL TEXT SETTING */
+
+  .card .cardWorks {
+    /* border: 1px solid red; */
+    width: 37rem;
+    height: 30rem;
+  }
+
+  /* Img 1 SETTINGS */
+  .cardImg {
+    /* border: 1px solid blue; */
+    width: 37rem;
+    height: 30rem;
+  }
+
+  /* card1 img */
+  .cardImg1 {
+    content: url(assets/bigSizePicCard1.svg);
+  }
+
+  /* card2 img */
+
+  .cardImg2 {
+    content: url(assets/bigSizePicCard2.svg);
+  }
+
+  /* card3 img */
+
+  .cardImg3 {
+    content: url(assets/bigSizePicCard3.svg);
+  }
+
+  /* card4 img */
+  .cardImg4 {
+    content: url(assets/bigSizePicCard4.svg);
+  }
+
+  /* Invert img */
+  .card-container:nth-child(4) .cardImg,
+  .card-container:nth-child(6) .cardImg {
+    order: 1;
+  }
+
+  /* Word TONIC */
+  .cardWorks h4 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    margin-left: 2.2rem;
+  }
+
+  /* Class card work skills setting */
+  .cardWorks-skills {
+    margin-top: 1rem;
+  }
+
+  /* Words "canopy" "back end dev" and "2015" settings */
+  .word1 {
+    width: 43px;
+    height: 24px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #344563;
+  }
+
+  .word2 {
+    width: 120px;
+    height: 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 8px;
+    color: #6b778c;
+  }
+
+  .word3 {
+    padding: 8px;
+    width: 38px;
+    height: 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  /* settings for pharagarph */
+  .cardWorks .pCards {
+    margin-top: 1rem;
+    width: 31rem;
+    height: 50px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  /* settings for words: html css and javascript */
+  .workContainer {
+    margin-top: 1rem;
+    border-radius: 8px;
+    margin-left: 2.2rem;
+  }
+
+  /* settings for words: html css and javascript */
+  .cardButton {
+    width: 140px;
+    margin-left: 2.2rem;
+    margin-top: 3rem;
+  }
+
+  /* About myself */
+  .aboutMyself {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-top-right-radius: 6rem;
+    gap: 3rem;
+  }
+
+  .aboutMyself-container {
+    width: 40%;
+    margin-left: 3rem;
+  }
+
+  .aboutMyself-container h3 {
+    margin-top: 2rem;
+  }
+
+  .desktopVersion {
+    width: 45%;
+  }
+
+  .aboutMyself-container p {
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .span-language {
+    padding: 0;
+    margin: 0;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 35px;
+    color: #344563;
+  }
+
+  .container-desktop {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .languages {
+    padding: 10px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgba(247, 247, 249, 1);
+    width: 7rem;
+    height: 7rem;
+  }
+
+  .languages-img {
+    align-self: flex-start;
+  }
+
+  #js {
+    padding: 0;
+    align-self: flex-start;
+    color: rgba(37, 56, 88, 1);
+    padding-top: 0.5rem;
+    width: 6rem;
+  }
+
+  #html {
+    padding: 0;
+    align-self: flex-start;
+    color: rgba(37, 56, 88, 1);
+    padding-top: 0.5rem;
+    width: 3rem;
+  }
+
+  #css {
+    padding: 0;
+    align-self: flex-start;
+    color: rgba(37, 56, 88, 1);
+    font-size: 15px;
+    padding-top: 0.5rem;
+    width: 2rem;
+  }
+
+  /* footer */
+
+  footer {
+    background-color: white;
+  }
+
+  .footer-desktop {
+    background-image: url(assets/backgraund-footer-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .form-container {
+    background-image: url(assets/background-inside-footer.svg);
+    background-size: contain;
+    background-position-x: right;
+    background-repeat: no-repeat;
+    gap: 20px;
+  }
+
+  .footer-desktop p {
+    width: 43%;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+  }
+
+  input {
+    border-radius: 0;
+    width: 28rem;
+  }
+
+  textarea {
+    border-radius: 0;
+  }
+
+  #formButton {
+    margin-left: 12rem;
+  }
+}
